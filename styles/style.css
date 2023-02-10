@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+:root{
+    --very-pale-blue:  hsl(193, 100%, 96%);
+    --very-Dark-Cyan: hsl(192, 100%, 9%);
+    --grayish-Blue: hsl(208, 11%, 55%);
+    --pink: hsl(322, 100%, 66%)
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 375px;
+    margin: auto;
+}
+.perk img ,.hero-img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+}
+h1,h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+p{
+    /* color: var(--grayish-Blue) */
+}
+.btn{
+    width: 150px;
+    padding: .625rem 0 ;
+    border-radius: 1.5rem;
+    border: none;
+    outline: transparent;
+    background: var(--pink);
+    color: #fff;
+}
+
+.shadow{
+    box-shadow: 1px 6px 20px #89898959;
+}
+/* header */
+.header{
+    justify-content: space-between;
+    margin:1rem 0  7rem;
+}
+.hero-sec{
+    padding: 1rem;
+    background: url(../images/bg-hero-mobile.svg) center/cover no-repeat, var(--very-pale-blue);
+}
+.header .btn{
+    background: #fff;
+    color: var(--very-Dark-Cyan);
+    font-weight: 700;
+}
+
+.header img{
+    width: 170px;
+    object-fit: contain;
+}
