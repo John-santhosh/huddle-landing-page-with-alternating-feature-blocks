@@ -15,10 +15,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 .container{
-    width: 375px;
+    min-width: 375px;
     margin: auto;
 }
-.perk img ,.hero-img{
+.perk-con img ,.hero-img{
     width: 100%;
 }
 .row{
@@ -29,6 +29,7 @@ body{
     font-size: 17px;
     font-weight: 400;
     text-align: center;
+    /* margin: 1rem; */
 }
 h1{
     font-size: 2rem;
@@ -37,9 +38,9 @@ h1,h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-p{
-    /* color: var(--grayish-Blue) */
-}
+/* p{
+    color: var(--grayish-Blue) 
+} */
 .btn{
     width: 150px;
     padding: .625rem 0 ;
@@ -48,6 +49,8 @@ p{
     outline: transparent;
     background: var(--pink);
     color: #fff;
+    font-weight: 700;
+    box-shadow: 1px 6px 20px #89898959;
 }
 
 .shadow{
@@ -56,7 +59,8 @@ p{
 /* header */
 .header{
     justify-content: space-between;
-    margin:1rem 0  7rem;
+    margin:0 0  7rem;
+    padding: 1rem;
 }
 .hero-sec{
     padding: 1rem;
@@ -65,10 +69,53 @@ p{
 .header .btn{
     background: #fff;
     color: var(--very-Dark-Cyan);
-    font-weight: 700;
 }
 
 .header img{
     width: 170px;
     object-fit: contain;
+}
+
+.hero p{
+    margin: 2rem 0 ;
+}
+
+.hero-btn{
+    margin-bottom: 2rem;
+}
+
+/* perk section */
+
+.perk , .apply{
+    margin: 2rem 1rem ;
+    box-shadow: 1px 3px 50px rgba(175, 175, 175, 0.359);
+    border-radius: 1rem;
+}
+.perk img{
+    padding:3.5rem 3rem;
+}
+.perk p{
+    margin: 2rem;
+}
+.apply h2{
+    margin: 1.5rem 0;
+}
+.apply{
+    padding: 3rem 1rem;
+    transform: translateY(50%);
+    background-color: #fff;
+    box-shadow: 0 -10px 20px rgba(175, 175, 175, 0.359);
+}
+.perk-btn{
+    width: 70%;
+    padding: 1rem;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--very-Dark-Cyan);
+    text-align: left;
+    padding: 12rem 1rem 2rem;
+    color: #fff;
 }
