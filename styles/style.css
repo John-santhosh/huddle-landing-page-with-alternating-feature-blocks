@@ -26,6 +26,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
 body{
     font-size: 17px;
     font-weight: 400;
@@ -120,13 +124,16 @@ h1,h2{
 .perk p{
     color: var(--grayish-Blue) 
 }
+.perk-con{
+    margin-top: 4rem;
+}
 
 /* footer */
 
 footer{
     background-color: var(--very-Dark-Cyan);
     text-align: left;
-    padding: 12rem 1rem 2rem;
+    padding: 12rem 1rem 6rem;
     color: #fff;
 }
 
@@ -190,9 +197,88 @@ footer a:hover{
 .address ~ div{
     margin: 2rem 0 ;
 }
+@media only screen and (min-width: 520px ) {
+    footer .row > div:nth-child(3){
+        width: 100%;
+    }
+    .apply{
+        width: 80%;
+        margin: auto;
+    }
 
+}
 @media only screen and (min-width: 720px){
     .container{
-        width: 900px;
+        max-width: 900px;
+    }
+    body{
+        text-align: left;
+    }
+    .flex-space{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero .row> div,.perk .row > div{
+        /* background: pink; */
+        width: 45%;
+    }
+    .hero-btn{
+        width: 60%;
+    }
+    /* perk */
+    .perk p {
+        margin-left: 0 ;
+    }
+    .apply{
+        min-width: 50%;
+        max-width: 70%;
+        margin: auto;
+    }
+    .apply h2{
+        width: 100%;
+        text-align: center;
+    }
+    .perk1 .flex-space > div:first-child , .perk3 .flex-space >div:first-child{
+        order: 1;
+    }
+    .perk1 .flex-space > div:last-child , .perk3 .flex-space >div:last-child{
+        padding-left: 5rem;
+    }
+    /* footer */
+    footer .row > div:first-child{
+        width: 30%;
+    }
+    footer .row > div:nth-child(2){
+        width: 30%;
+        height: 150px;
+        margin-top: 3rem;
+    }
+
+    footer .row > div:nth-child(3){
+        width: 32%;
+        height: 150px;
+        margin-top: 3rem;
+    }
+    footer p ,footer a {
+        font-size: 1rem;
+    }
+    .contact{
+        text-align: left;
+    }
+    .fa-brands{
+        margin: 5px;
+        font-size: 1.1rem;
+        /* padding: .5rem; */
+    }
+    .r1 ~p{
+        /* background-color: beige; */
+        transform: translateY(100px);
+        font-size: .825rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container{
+        max-width: 1200px 
     }
 }
