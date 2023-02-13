@@ -272,12 +272,13 @@ footer a:hover{
     .fa-brands{
         margin: 5px;
         font-size: 1.1rem;
-        /* padding: .5rem; */
     }
     .r1 ~p{
-        /* background-color: beige; */
         transform: translateY(100px);
         font-size: .825rem;
+    }
+    footer .address > div{
+        flex-wrap: nowrap ;
     }
 }
 @media only screen and (min-width: 992px) {
