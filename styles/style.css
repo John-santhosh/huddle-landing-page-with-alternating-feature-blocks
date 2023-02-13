@@ -226,6 +226,9 @@ footer a:hover{
     .hero-btn{
         width: 60%;
     }
+    .hero-sec{
+        background: url(../images/bg-hero-desktop.svg) center/cover no-repeat, var(--very-pale-blue);
+    }
     /* perk */
     .perk p {
         margin-left: 0 ;
